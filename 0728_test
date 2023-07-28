@@ -1,0 +1,91 @@
+//1번)구구단 _ 1입력시 홀수단, 2 입력시 짝수단 출력하기 
+//2번)5개 입력받아서 최고점, 점수 학점 
+//3번)숫자n개 입력 받아서 ABCDF가 각각 몇 명인지, 최고점 최하점 평균
+
+
+
+/*
+★1번 문제 
+package java_project;
+
+import java.util.Scanner;
+
+public class scanner {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int sc;
+		System.out.println("숫자를 입력해 주세요: 1.홀수 2. 짝수");
+		sc =scan.nextInt();
+		
+		switch(sc){
+			case 1:
+				
+				for(int i=1; i<10; i++){
+					if(i%2==1) {
+					System.out.println("★"+ i + "단");
+					for(int j=1;j<10; j++) {
+					System.out.println(i + "x" + j+ "="+ i*j);
+					}
+					continue;
+					
+		}
+					break;
+				}
+				case 2:
+					
+					for(int i=1; i<10; i++){
+						if(i%2==0) {
+						System.out.println("★"+ i + "단");
+						for(int j=1;j<10; j++) {
+						System.out.println(i + "x" + j+ "="+ i*j);}
+						continue;
+				
+		
+		
+		}
+		    System.out.println("\n");
+			}
+	}
+
+}
+}
+
+*/
+
+
+
+/*2번
+
+package java_project;
+
+import java.util.Scanner;
+
+public class n {
+
+	public static void main(String[] args) {
+		System.out.println("1번째 점수를 입력하세요: ");
+		Scanner scanner=new Scanner(System.in);
+		int max = scanner.nextInt();
+		int min = max;
+					
+		    
+		for(int i=1;i<5;i++) {
+			
+			System.out.println(i+1+"번째 점수를 입력하세요: ");
+			int number=scanner.nextInt();
+			    		    
+	    if(number>max) {
+	      max=number;
+	    }
+	    
+	   if(number<min) {
+		   min=number;
+	   }
+	}
+	    System.out.println("입력한 숫자 중에서 가장 큰 최고점은 :"+max+"최하점은"+min);
+	
+	}
+}
+
+*/
