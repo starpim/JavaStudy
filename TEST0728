@@ -1,0 +1,111 @@
+//2번 문제 
+package java_project;
+
+import java.util.Scanner;
+
+public class Test03 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.print("점수를 입력하세요 :" );
+		int num=sc.nextInt();
+		if (num>=90) {
+			System.out.println("A학점");
+			
+		}else if (num>=80) {
+			System.out.println("B학점");
+		}
+		else if (num>=70) {
+			System.out.println("C학점");
+		}
+		else if(num>=60) {
+			System.out.println("D학점");
+		}
+		else {
+			System.out.println("F학점");
+		}
+
+	}
+
+}
+
+//3번 문제
+
+package java_project;
+
+import java.util.Scanner;
+
+public class test004 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner (System.in);
+		int max=0;
+		
+		System.out.print("점수를 입력하세요: ");
+		int n1=sc.nextInt();
+		if(max <n1) {
+			max=n1;
+		}
+		System.out.print("점수를 입력하세요: ");
+		int n2=sc.nextInt();
+		if(max<n2) {
+			max=n2;
+		}
+		System.out.print("점수를 입력하세요: ");
+		int n3=sc.nextInt();
+		if(max<n3) {
+			max=n3;
+		}
+		System.out.print("점수를 입력하세요: ");
+
+		int n4=sc.nextInt();
+		if(max<n3) {
+			max=n3;
+		}
+		System.out.print("점수를 입력하세요: ");
+		int n5=sc.nextInt();
+		if(max<n5) {
+			max=n5;
+		}
+		if(n1>n2 && n1>n3 && n1>n4 && n1>n5) {
+			
+		}
+		System.out.println("최대값은" + max+"입니다.");
+	
+
+	}
+
+}
+
+//4번문제
+
+package java_project;
+
+public class test04 {
+
+	public static void main(String[] args) {
+		
+		int a= 10;
+		int b=20;
+		int c=30;
+		
+		//1번째 방법
+	if(a<c && b<c) {//논리연산자
+		System.out.println("C가 가장 크다.");
+	}
+	if (a<c) {//중첩
+		if(b<c) {
+			System.out.println("C가 가장 크다");
+		}
+	}
+	if(a>=c) {
+		System.out.println("A가 c보다 크다");
+	}
+	else if (b>=c) {	
+		System.out.println("B가 C보다 크다");
+	}
+	else {
+		System.out.println("C가 가장 크다");
+	}
+}
+}
