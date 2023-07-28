@@ -4,6 +4,13 @@
 //자료형[] 배열명 = new 자료형 [크기]  
 //PC는 0부터 시작 0,1,2,3,4
 //배열의 길이 배열명.length
+
+// int[] arr4;
+//arr4=new int[5];
+//정수형 -> 사이즈때문에 구분 int, long, short...
+
+
+
 /*
 package java_project;
 
@@ -36,4 +43,67 @@ public class Array {
 	}
 
 }
+*/
+
+
+/*
+
+package java_project;
+
+import java.util.Scanner;
+
+public class Array {
+
+	public static void main(String[] args) {
+
+	String[] str=new String[5];
+	Scanner scan=new Scanner(System.in);
+	
+	for(int i=0; i<5; i++) {
+		str[i]=scan.next();
+		
+		}
+	for(int i=0;i<5;i++) {
+		System.out.println(str[i]);
+	}
+	}
+
+}
+
+
+*/
+
+
+
+
+/*
+
+package java_project;
+import java.util.Scanner;
+
+public class equlas {
+
+	public static void main(String[] args) {
+		
+		Scanner scan=new Scanner(System.in);
+		String menu=scan.next();
+		
+		String[] str= {"참외","딸기","배","포도","수박"};
+		
+			for(int i=0; i<5; i++) {
+				if(menu.equals(str[i])) {
+				System.out.println("있습니다.");
+				break;
+				}
+				
+			if(i==4) {
+					System.out.println("없습니다.");
+						}
+
+	}
+
+}}
+
+
+
 */
