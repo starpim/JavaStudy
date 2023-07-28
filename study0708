@@ -1,0 +1,78 @@
+//★★7월28일 반복문
+
+//for문 사용 방법 
+//for(1.초기식;2.조건식;3.증감식){코드}
+//==========  초기식 여러개 ; 증감식 여러개도 가능 ; ===========
+//==========ex(  int i=0, j=1,k-10; i<10&&j<20||k<100 ; i++,j+2,k*2 )===========
+//초기식: 처음 시작 정해준다. 어디서부터 시작할 것인지 (시작을 담당)
+//조건식: 특정 조건을 만족할 뗴 반복 -> 언제까지 할 것인지  (끝을 담당)
+//증감식: 시작부터 끝까지 도달하는 방식 -> 어떻게 진행할래? 중간
+
+/* ((연습 ))
+package java_project;
+
+public class study0728 {
+
+	public static void main(String[] args) {
+		for(int i=0;i<10;i++)
+		{
+		System.out.println("안녕하세요");
+		}
+
+	}
+
+}
+*/
+
+//while문 사용 방법
+//while(조건식){}
+
+/* ((연습 ))
+package java_project;
+
+public class study0728 {
+
+	public static void main(String[] args) {
+		int i =0;
+	while(i<10) {
+		i++;
+		System.out.println(i);
+		
+		
+	}
+	}
+
+}
+
+*/
+
+
+
+
+//** 문제 ** 0부터 100까지 짝수만 출력 //
+//내가 푼 거 
+package java_project;
+
+public class study0728 {
+
+	public static void main(String[] args) {
+		
+    int i =0;
+    System.out.println("★★★연습문제1 : 0부터 100까지 짝수만 출력-1 (while사용)");
+	while(i<100) {
+		System.out.println(i);
+		i=i+2;
+		
+		
+	}
+	 System.out.println("★★★연습문제1 : 0부터 100까지 짝수만 출력-2(for사용)");
+		for(int j=0; j<=100; j++) {
+			System.out.println(j);
+			j++;
+	}
+
+}
+	}
+
+//=======================================================================================
+//쌤 정답 
