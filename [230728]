@@ -1,0 +1,67 @@
+
+public class class05 {
+
+	public static void main(String[] args) {
+		String greeting="Hello";
+		String sentence=greeting+" Professor!"; 
+				
+		System.out.println(sentence);
+		System.out.println(sentence.length());
+		System.out.println(sentence.toLowerCase());
+		System.out.println(sentence.toUpperCase());
+		System.out.println(sentence.replace('l','z'));
+		System.out.println(sentence.substring(2));//substring(a)(a부터 끝까지
+ 		System.out.println(sentence.substring(2,9));//substring(a,b)(a부터 b 전 까지
+		
+ 		System.out.println(sentence.charAt(4));//substring(a)(a부터 끝까지
+ 		System.out.println(sentence.indexOf("l"));//문자열에서 가장 앞에 있는 아이 반환 .   
+ 		System.out.println(sentence.indexOf("p"));
+ 		System.out.println(sentence.lastIndexOf("l"));//문자열에서 가장 뒤에 있는 아이 반환 . 
+ 		
+ 		System.out.println(greeting.concat(sentence));// 
+ 		System.out.println(greeting.equals("hello"));//  
+ 		System.out.println(greeting.equalsIgnoreCase("hello"));//  
+ 		System.out.println(greeting.compareTo("Aello"));//  
+ 		System.out.println(greeting.compareTo("Hello"));//  
+ 		System.out.println(greeting.compareTo("Hezzo"));//  
+ 		
+ 		
+ 		String world="Hello world.";
+ 		
+ 		
+ 		//★1번.
+ 		
+ 		System.out.println(world.lastIndexOf("."));
+ 	 				
+ 		//*2번
+ 		
+// 		System.out.println(world.toUpperCase());
+ 		//System.out.println(world.toUpperCase("hello") == world.toUpperCase());
+ 		
+ 		if((world.compareTo("Hello world."))==0) {
+ 			System.out.println((world.compareTo("Hello world.")==0)); 		
+ 			}
+ 		else {
+ 			System.out.println((world.compareTo("Hello world.")==0)); 	
+ 		}
+ 			
+ 		
+ 		//*3번
+ 		
+ 		
+ 		 
+	}
+
+}
+
+//string-변수가 아니다
+//클래스 -객체구나
+//public class string{
+//char[] c;
+//
+//
+//boolean equals(char c2) {}
+
+//String world="Hello world." 모든 문장은 마침표로 이루어져있다는 가정하에 length사용하지 않고 총 길이 출력
+//equalsIgnoreCase사용하지 않고 2개의 문자열을 서로 비교 
+//문자열에 indexOF 처음  , 마지막 에 특정 위치 알 수 있었다. 그럼, 해당 문자열에 원하는 문자가 몇 개 들어있는 지 말 해주는 프로그램? 
