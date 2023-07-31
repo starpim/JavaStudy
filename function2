@@ -1,0 +1,31 @@
+// /onlinegdb.com
+
+/*객체와 클래스 
+클래스: 설계도
+객체: 설계도를 통해 만들어진 것 
+접근제어자: class 클래스명{
+인스턴스 변수
+
+
+
+public class class05 {
+
+	public static void main(String[] args) {
+		String greeting="Hello";
+		String sentence=greeting+" Professor!"; 
+				
+		System.out.println(sentence);
+		System.out.println(sentence.length());
+		System.out.println(sentence.toLowerCase());
+		System.out.println(sentence.toUpperCase());
+		System.out.println(sentence.replace('l','z'));
+		System.out.println(sentence.substring(2));//substring(a)(a부터 끝까지
+ 		System.out.println(sentence.substring(2,9));//substring(a,b)(a부터 b 전 까지
+		
+ 		System.out.println(sentence.charAt(4));//substring(a)(a부터 끝까지
+ 		System.out.println(sentence.indexOf("f"));
+ 		System.out.println(sentence.indexOf("p"));
+	
+	}
+
+}
