@@ -1,0 +1,159 @@
+import java.util.Scanner;
+
+public class Class0802g {
+
+	public static void main(String[] args) {
+		// 입력 Scanner
+		//조건문 통해서  ? 깁니다. 가위 바위 보 
+		
+		Scanner sc= new Scanner(System.in);
+		int score1=0;//철수 
+		int score2=0;//영희
+		int score3=0;//무승부 
+		
+		for (int i=0;i<5;i++) {
+		System.out.println("철수의 패를 숫자로 입력해 주세요.\n : 1. 가위 2. 바위 3. 보 :");
+		int h1=sc.nextInt();		
+        System.out.println("영희의 패를 숫자로 입력해 주세요.\n : 1. 가위 2. 바위 3. 보 :");
+	    int h2=sc.nextInt();	
+			
+			switch (h1){
+			
+			case 1: 	 //사람이 가위 
+				System.out.println("\n--------------\n철수는 가위를 입력했습니다. ");
+				
+				if(h2==2) {//h2가 바위 
+					++score2;
+					--score1;
+					System.out.println(
+							"영희는 바위를 입력했습니다. \n "
+							+ "그래서 결과는 ?\n"
+							+ "철수가 영희에게 졌습니다.\n "
+							 
+									+ "--------------\n");
+					
+					
+				}
+				else if (h2==3) {	//h2가 보 --철수가 이겼다.  
+					++score1;
+					--score2;
+					System.out.println("영희는 보를 입력했습니다. \n "
+							+ "---------------\n 그래서 결과는 ?\n"
+							+ "철수가 영희에게 이겼습니다.\n "
+							 
+							);
+						
+						
+					}
+				
+					else {
+						++score3;
+						System.out.println("영희도 가위를 입력했습니다.\n"
+								+"---------------\n그래서 결과는?\n"
+								+"비겼습니다.\n"
+								+"-------------- \n"
+								 );
+						
+								
+						}
+				break;
+				
+			case 2://철수가 바위 
+				
+			System.out.println("\n--------------\n 철수는 바위를 입력했습니다. ");
+			if(h2==3) {//h2가 바위 
+				++score2;
+				--score1;
+				System.out.println(
+						"영희는 바위를 입력했습니다. \n "
+						+ "그래서 결과는 ?\n"
+						+ "철수가 영희에게 졌습니다.\n "
+						 
+								+ "--------------\n");
+				
+				
+			}
+			else if (h2==1) {	//h2가 보 --철수가 이겼다.  
+				++score1;
+				--score2;
+				System.out.println("영희는 보를 입력했습니다. \n "
+						+ "---------------\n 그래서 결과는 ?\n"
+						+ "철수가 영희에게 이겼습니다.\n "
+						 
+						);
+					
+					
+				}
+			
+				else {
+					++score3;
+					System.out.println("영희도 바위를 냈습니다.\n"
+							+"---------------\n그래서 결과는?\n"
+							+"비겼습니다.\n"
+							+"-------------- \n"
+							 );
+				}
+					break;
+					
+			case 3:
+				System.out.println("\n--------------\n철수는 보를 입력하셨습니다. ");
+				if(h2==1) {//h2가 바위 
+					++score2;
+					--score1;
+					System.out.println(
+							"영희는 가위를 입력했습니다. \n "
+							+ "그래서 결과는 ?\n"
+							+ "철수가 영희에게 졌습니다.\n "
+							 );
+					
+					
+				}
+				else if (h2==2) {	//h2가 보 --철수가 이겼다.  
+					++score1;
+					--score2;
+					System.out.println("영희는 바위를 입력했습니다. \n "
+							+ "---------------\n 그래서 결과는 ?\n"
+							+ "철수가 영희에게 이겼습니다.\n "
+							 
+							);
+						
+						
+					}
+				
+					else {
+						++score3;
+						System.out.println("영희도 보를 냈습니다.\n"
+								+"---------------\n그래서 결과는?\n"
+								+"비겼습니다.\n"
+								+"-------------- \n"
+								 );
+					}
+						break;
+			
+				default:
+					System.out.println("제대로 입력해 주세요. ");
+				
+ 		}}
+		
+		if(score1<0) {
+			score1=0;
+		}
+		
+		if(score2<0) {
+			score2=0;
+		}
+		
+		if(score3<0) {
+			score3=0;
+		}
+		
+		System.out.println(" \n *** 총 결과 *** \n\n\n\n\n\n"
+				 
+				
+				+ "철수 : "+score1 +"승" +score3+"무" +score2+"패\n"
+				+ "영희 : "+score2 +"승" +score3+"무" +score1+"패\n");
+		}
+	}
+
+	
+
