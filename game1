@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class Class0802d{
+
+	public static void main(String[] args) {
+		// 입력 Scanner
+		//조건문 통해서  ? 깁니다. 가위 바위 보 
+		
+		Scanner sc= new Scanner(System.in);
+	
+		
+		System.out.println("당신은 사람입니다.\n 숫자를 입력해 주세요: 1. 가위 2. 바위 3. 보 :");
+		
+			int human=sc.nextInt();		
+			System.out.println("PC의 패를 입력해 주세요.\n 숫자를 입력해 주세요: 1. 가위 2. 바위 3. 보 :");
+			int pc=sc.nextInt();	
+			
+			switch (human){
+			
+			case 1: 	 //사람이 가위 
+				System.out.println("\n--------------\n사람은 가위를 입력했습니다. ");
+				
+				if(pc==2) {//pc가 바위 
+					System.out.println("PC는 바위를 입력했습니다. \n 그래서 결과는 ?\n사람이 PC에게 졌습니다. ");
+				}
+				else if (pc==3)	//pc가 보 
+						{System.out.println("PC는 보를 입력했습니다. \n 그래서 결과는 ?\n사람이 PC에게 졌습니다. ");
+					}
+					else {
+						System.out.println("PC도 가위를 입력했습니다.\n-------------- \n그래서 결과는?\n \n비겼습니다.");}
+				break;
+			case 2:
+			System.out.println("\n--------------\n 사람은 바위를 입력했습니다. ");
+			if(pc==3) {
+				System.out.println("PC는 보를 입력했습니다.   \n 그리고 결과는 ?\n 사람이 PC를 이겼습니다. ");
+			}
+			else if (pc==1)	
+					{System.out.println("PC는 가위를 입력했습니다. \n그리고 사람은 PC에게 졌습니다. ");
+				}
+				else {
+					System.out.println("그리고 비겼습니다.");}
+			break;
+			
+			case 3:
+				System.out.println("\n--------------\n사람은 보를 입력하셨습니다. ");
+				if(pc==2) {
+					System.out.println("PC는 보를 입력했습니다. \n 그리고 결과는 ?\n 사람이 PC를 이겼습니다. ");
+				}
+				else if (pc==1)	
+						{System.out.println("그리고 사람은 PC에게 졌습니다. ");
+					}
+					else {
+						System.out.println("그리고 비겼습니다.");}
+				break;
+				default:
+					System.out.println("제대로 입력해 주세요. ");
+				
+ 		}}}
+	
+
