@@ -29,3 +29,35 @@ public class Class0801{
  		}}
 	}
 }
+/*
+import java.util.Scanner;
+
+public class Class0802 {
+
+	public static void main(String[] args) {
+		// 입력 Scanner
+		//조건문 통해서  ? 깁니다. 가위 바위 보 
+		
+		Scanner sc= new Scanner(System.in);
+		
+		while(true){
+		System.out.println("숫자를 입력해 주세요: 1. 가위 2. 바위 3. 보 :");
+		int game=sc.nextInt();
+		
+		if(game==1) {
+			System.out.println("가위를 입력하셨습니다. ");	
+		}
+		else if(game==2) {
+			System.out.println("바위를 입력하셨습니다. ");
+			}
+		else if(game==3) 
+		{
+			System.out.println("보를 입력하셨습니다. ");
+		}
+		else {
+			System.out.println("잘못된 값을 입력하셨습니다. ");
+		}
+		}
+	}
+}
+*/
