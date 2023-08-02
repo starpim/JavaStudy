@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class Array {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		//배열  : 김포공항* 공항시장 마곡나루 양천항교 가양* 증미 당산*국회의사당  여의도*
+		//9호선 급행 
+		
+		// 어떤 열차 탈래 ? 급행인지, 급행 아닌지
+		//어디에서 내릴레 위에 있는 역 중에 입력 (단, 급행열차는 일반역에 멈추지 않음.)
+		//내가 탄 열차가 지나온 역들이 쭉 출력 
+		String[] sub= new String[] {"김포공항","공항시장","마곡나루","양천항교","가양","증미","당산","국회의사당","여의도"};
+		 
+		 
+		
+		//{"공항","공항시장","마곡나루","양천항교","가양","증미","당산","국회의사당","여의도"};
+		
+		
+		
+		
+		
+		System.out.println("[9호선 열차]");
+//////////////////////////////////////////////////////////////////////////////////////////////
+		System.out.println("급행열차를 타시겠습니까? : 1 예 , 2 아니오");
+		int ex=sc.nextInt();
+		System.out.println("승차 역 선택 : \n 1.김포공항 2공항시장 3마곡나루 4양천항교 5가양 6증미 7당산 8국회의사당 9여의도");
+		int in=sc.nextInt();
+		System.out.println("하차 역 선택 : \n 1.김포공항 2공항시장 3마곡나루 4양천항교 5가양 6증미 7당산 8국회의사당 9여의도");
+		int out=sc.nextInt();
+		
+		switch(ex){
+
+			case 1: if(out%2==0) {
+				System.out.print("급행노선은 일반 역에 하차할 수 없습니다. ");
+				break;
+			}
+				System.out.print("급행노선:"+sub[in-1]+". ");
+				
+				for(int i=in;i<out;i++) {
+					if(i%2==1) {
+						continue;
+					}
+				System.out.print(sub[i]+". ");}
+					break;			 
+//////////////////////////////////////////////////////////////////////////////////////////////
+			case 2:
+				System.out.print("일반노선:"+sub[in-1]+".  ");
+				for(int i=in;i<out;i++) {
+					if(i%2==0) {
+						continue;
+					}
+				System.out.print(sub[i]+". ");}
+				break;
+				}
+	 
+		
+		
+		}
+	}
+	
+ 
