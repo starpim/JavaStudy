@@ -1,0 +1,35 @@
+
+public class Class0803 {
+	
+	public static void main(String[] args) {
+
+
+		 
+		
+		Movie PARASITE=new Movie("기생충",120,"봉준호","최우식");
+		Movie TheNun=new Movie("더넌",120,"마이클차베즈","보니 아론스");
+		Movie Smugglers=new Movie ("밀수",129,"류승완","박정민, 조인성 ");
+		////Movie(String name, int time, String director, String act)
+		
+ 
+	 
+		PARASITE.run();
+		PARASITE.director();
+		PARASITE.act();
+		NewLine();
+		NewLine();
+		NewLine();
+		
+		TheNun.run();
+		TheNun.director();
+		TheNun.act();
+		
+		
+	}
+	
+	static void NewLine(){	
+		System.out.println("");
+}
+
+}
+	
