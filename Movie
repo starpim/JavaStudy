@@ -1,0 +1,28 @@
+public class Movie {
+
+	int time;
+	String name;
+	String director;
+	String act;
+	 
+
+
+Movie(String name, int time, String director,String act ){
+	this.name=name;
+	this.time=time;
+	this.director=director;
+	this.act=act;
+	
+}
+
+void run() {
+	System.out.println("영화 : " + name + "의 상영시간은 총  " + time+" 분 입니다. ");
+}
+void director() {
+	System.out.println("영화: "+name+ "의 감독은"+ director + "입니다. ");
+}
+void act() {
+	System.out.println("영화 "+name+"의 주연배우는 "+act+"입니다. " );
+}
+
+}
