@@ -1,0 +1,99 @@
+/*
+지역변수 : 특정 지역에서만 사용가능.
+장점) 모든 곳에서 접근이 가능. 
+단정) 모든 곳에서 접근이 가능 - 보안성에 취약함
+
+전역변수:  전지역에서 사용가능.
+장점)
+단점) 함수 안과 밖 구분이 어렵다.
+* 변수가 선언된 위치 : 어디의 지역변수인지, 지역구분은 항상{}사이 
+
+변수 선언
+1 {} 사이 
+2 () 사이 : 옆에 보면 {}가 있음. 
+
+* 기본생성자
+
+
+인스턴스 변수
+
+
+//생성자
+
+상속(:클래스 간의 상하 관계)
+내가 가지고 잇는 속성(인스턴스 변수 ) 동(매소드 )이 다른 클래스에도 이미 있다면?
+똑같이 생긴 설개도를 또 만들어야 함
+다른 설계도를 배껴올수있다면 좋겠네
+
+부모 클래스(이미 만들어져 있는 설계도)
+자식클래스(배껴서 새로 작성할 설계도
+
+
+*/
+
+
+
+
+
+public class Class0803 {
+	
+	public static void main(String[] args) {
+
+
+		Person kim=new Person("KIM",23);
+		Person choi=new Person("CHOI", 12);
+		Person park=new Person("PARK", 44);
+		
+		Movie PARASITE=new Movie("기생충",120,"봉준호","최우식");
+		Movie TheNun=new Movie("더넌",120,"마이클차베즈","보니 아론스");
+		Movie Smugglers=new Movie ("밀수",129,"류승완","박정민, 조인성 ");
+		////Movie(String name, int time, String director, String act)
+		
+//		kim.name="KIM";
+//		kim.age= 23;
+		
+//		choi.name="CHOI";
+//		choi.age=12;
+//		
+//		park.name="PARK";
+//		park.age=36;
+		
+		kim.speak();
+		kim.run();
+		kim.eat();
+		NewLine();
+		NewLine();
+		NewLine();
+		choi.speak();
+		choi.run();
+		choi.eat();
+		NewLine();
+		NewLine();
+		NewLine();
+		park.speak();
+		park.run();
+		park.eat();
+		
+		NewLine();
+		NewLine();
+		NewLine();
+		PARASITE.run();
+		PARASITE.director();
+		PARASITE.act();
+		NewLine();
+		NewLine();
+		NewLine();
+		
+		TheNun.run();
+		TheNun.director();
+		TheNun.act();
+		
+		
+	}
+	
+	static void NewLine(){	
+		System.out.println("");
+}
+
+}
+	
