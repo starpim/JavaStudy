@@ -1,0 +1,85 @@
+package homeWork;
+
+ 
+
+
+class Animal {
+
+	String knd;
+	String sex;
+	String v; 
+	
+	int age;
+	
+	void eat(){
+		System.out.println(sex+" "+knd+"은(는)"+" 를 먹는다");
+	}
+	void howl(){
+		System.out.println(sex+" "+knd+"는 "+v+ "소리를 낸다 ");
+	}
+	
+	void leg(){
+		System.out.println(sex+" "+knd+"의 다리는 "+" 개다  ");
+	
+		
+	}
+}
+
+
+
+
+
+ class Bird extends Animal{
+
+	String home;
+	String wing_c;
+	
+	void fly(){
+		System.out.println("날아간다");
+	}
+	void fight(){
+		System.out.println("부리를 이용해 싸운다");
+	}
+	
+	
+}
+
+
+
+ class Mam extends Animal{
+
+	String home;
+	String baby;
+	
+	void a1(){
+		System.out.println("포유류1");
+	}
+	
+	 
+}
+
+
+
+public class homeWork {
+
+	public static void main(String[] args) {
+		 
+		Animal a=new Animal();
+		
+		a.knd="개";
+		a.sex="암컷";
+		a.age=1;
+		a.v="멍멍";
+		a.howl();
+		a.eat();
+		
+		System.out.println("안녕하이");
+		
+		/*//v eat houl leg
+		 * String knd;
+	String sex;
+	int age;
+	*/
+	}
+
+}
