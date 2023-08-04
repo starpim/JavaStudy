@@ -1,0 +1,17 @@
+package Maple;
+
+public class Magician extends Human {
+
+ 
+	Magician(){}
+		Magician(String user,String sx,int hp, int mp, int dex, int luc, int nt){
+			super(user,sx,hp,mp,dex,luc,nt);
+			 
+		}
+	 
+		void magic(){
+			System.out.println(this.user+"은(는) 매직클로를 사용했다.");
+}
+		 
+}
+ 
