@@ -1,0 +1,17 @@
+package Maple;
+
+public class Thief extends Human {
+
+ 
+		
+	Thief(String user,String sx,int hp, int mp, int dex, int luc, int nt){
+			super(user,sx,hp,mp,dex,luc,nt);
+			 
+		}
+	 
+		void Knife(){
+			System.out.println(this.user+"은(는) 수리검을 던졌다.");
+}
+		 
+}
+ 
