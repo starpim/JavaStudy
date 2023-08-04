@@ -1,0 +1,75 @@
+package Maple;
+
+import java.util.Scanner;
+
+import Class0804.Japan;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		int hh ;
+		int mm; 
+		 
+		Human h=new Human();
+		Monster m=new Monster();
+		System.out.println("아이디를 입력해 주세요.");
+		String user = sc.next();
+		System.out.println("성별을 입력해 주세요.");
+		String sx = sc.next();
+		hh=h.hp;
+		mm=m.health;
+		h.logIn(user,sx);
+		
+		System.out.println(hh);
+		System.out.println(mm);
+ 
+		while(true) {
+			
+		
+			hh=hh-m.P;
+			if((hh>=0)&&(mm>=0)) {
+			System.out.println("몬스터"+"이(가)"+user+"을(를) 공격했다.\n"
+					+user+"의 체력은"+ hh+"몬스터의 체력은:"+mm);
+			
+			
+			System.out.println("반격 1. 달팽이 던지기 / 2. 일반공격 ");
+			int aa = sc.nextInt();
+			
+			switch(aa) {
+			case 1: 
+				mm=mm-30;
+			System.out.println(user+"는 달팽기 던지기 공격을 했다..\n"
+					+user+"의 체력은"+ hh+"몬스터의 체력은:"+mm);
+				break;
+			
+			case 2: 
+				mm=mm-10;
+				System.out.println(user+"는 일반공격을 했다.\n"
+						+user+"의 체력은"+ hh+"몬스터의 체력은:"+mm);
+				break;
+				
+			}
+
+			}
+			
+			else if ((hh<=0)&&(mm>=0)) {
+				System.out.println(user+"은(는) 전투불가능한 상태다.");
+
+			}
+			else if((hh>=0)&&(mm>=0))
+			{
+				System.out.println(user+"은(는) 전투에서 승리했다. ");
+			
+			
+			}
+		} 
+			
+	}
+	
+	}
+
+		
+		 
+		
+ 
