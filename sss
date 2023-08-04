@@ -1,0 +1,54 @@
+package Maple;
+
+public class Human {
+
+	String user;
+	String sx;
+	int hp=10;
+	int mp=10; 
+	int dex=10;
+	int luc=10;
+	int nt=10;
+	
+	Human(			){}
+	Human(String user,String sx,int hp, int mp, int dex, int luc, int nt){
+		this.user=user;
+		this.sx=sx;
+		this. hp=hp;
+		this. mp=mp;
+		this. dex=dex;
+		this.luc=luc;
+		this.nt=nt;
+		
+	}
+ 
+	
+	//달팽이 던지기 
+	
+	void logIn(String user,String sx )
+		{
+	
+		
+		System.out.println
+		("√새 모험가 생성\n"+
+				"id: "+ user +"\n"+ 
+				"성별:" +sx+"\n"+
+				"HP : "+this.hp+"\n"+
+				"HP : "+this.mp+"\n"+
+				"DEX: "+this.dex+"\n"+
+				"LUC: "+this.luc+"\n"+
+				"INT: "+this.nt+"\n");
+				}
+	
+	
+	
+	void snail(String user){
+		System.out.println(this.user+"은(는) 달팽이를 던졌다.");
+	}
+	//
+	void nAttack(String user) {
+		System.out.println(user+"은(는) 일반공격을 했다.");
+	}
+	
+}
+
