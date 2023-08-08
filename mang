@@ -1,0 +1,28 @@
+package Koi;
+
+public class tGirl extends Girl  {
+
+	/*
+	[상속 ] 
+	int Att; //매력
+	int Lv; //  
+	int Hp; // 체력
+	Stirng Type;
+	*/ 
+	   
+
+ 
+tGirl ( int Hp, int Exp, int Lv,String Type)
+{	
+	super(Hp,Exp,Lv,Type);
+	  Hp=50;
+	  Exp=0;
+	  Lv=1;
+	Type="츤데레";
+}
+
+tGirl ( )
+{ 
+	
+	
+}
