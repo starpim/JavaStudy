@@ -1,0 +1,20 @@
+package studyCosmo;
+
+ 
+
+	import java.text.SimpleDateFormat;
+	import java.util.Date;
+
+	public class study {
+	    public static void main(String[] args) {
+	        // 현재 시간을 가져오기 위한 Date 객체 생성
+	        Date currentDate = new Date();
+
+	        // 날짜와 시간 포맷 지정을 위한 SimpleDateFormat 객체 생성
+	        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+	        // 포맷에 맞게 현재 시간을 문자열로 변환하여 출력
+	        String formattedDate = dateFormat.format(currentDate);
+	        System.out.println("현재 시간: " + formattedDate);
+	    }
+	}
