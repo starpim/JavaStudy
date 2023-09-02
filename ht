@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head><meta charset="utf-8">
+
+<title>HTML</title>
+
+</head>
+
+<body>
+
+<h1.title="h1 태그로 작성하였습니다. ">
+
+1장 홈페이지</h1>
+
+<h2 title="h2태그로 작성하였습니다.">
+
+1절 html언어</h2>
+
+<h3>텍스트 꾸미기</h3>
+
+html언어
+
+​
+
+<br>
+
+<br>
+
+​
+
+<b>진하게</b><br>
+
+<em>강조</em><br>
+
+<b><i>이탤릭으로 강조 </i><br>
+
+</b> 
+
+보통문자 <small>한 단계 작은 문자</small><br>
+
+<del>삭제</del><br>
+
+<ins>추가</ins><br>
+
+보통 문자의 <sup>윗첨자</sub><br>
+
+보통 문자의 <sub> 아래첨자</sub><br>
+
+<mark> 하이라이팅</mark><br>
+
+​
+
+<div style="background-color:pink;padding:30px;">
+
+<div style="background-color:#FBE7A1;padding:20px>
+
+<span style="color:green"><b><u>치이카와</u></b></span>는 일본의 일러스트레이터 <span style="color:purple"><b>나가노 작가</b></span>가 트위터에 연재중인 만화다 
+
+</div>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+ 
+
+​
+
+<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA4MjdfMjg1%2FMDAxNjYxNTk5MDMwMjE1.eyf6610q1wQUGFBPs0opG8UIaTsvIz2kG3ccXDInDywg.cPPFYjuMXseFpJ7OT_UE1isErcbAcZ2FAkv4iqT3kIAg.GIF.kwithdelight%2FIMG_3537.GIF&type=sc960_832_gif" width="500">
+
+</div>
+
+ 
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<hr>
+
+​
+
+</body>
+
+</html>
+
+​
+
+​
