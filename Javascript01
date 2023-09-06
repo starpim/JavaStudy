@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>페이지 만들기 </title>
+ 
+<script>
+function over(obj){
+    obj.src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMDNfMjMz%2FMDAxNjY3NDQ4Nzg3NDU3.LbX2IF6zRGu5ydx17FAbusC2U3j900rsCh8w9vDj5uEg.N0pu_b8-CmKmlulRbmKfvX1IGe4itNN6sWUUgq6nDjMg.JPEG.519gomdori%2Foutput_2905460349.jpg&type=sc960_832";
+}
+
+function out(obj){
+    obj.src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA5MThfMTM5%2FMDAxNjYzNDkyNDA5NjE5.v8NI4c2UD4ua91XneO1lbUU4Ta3YOnMci6EgmD61zQMg.vrWrnu_HsCAicmZRUM4qIRGwe1sPI9ZZhoOSDQ1uD7Qg.JPEG.yrebecca%2F1663492188167.jpg&type=sc960_832";
+}
+</script>
+ </head>
+
+<body>
+
+ <h3>마우스 올려 보세요 </h3>
+ <hr>
+ <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA5MThfMTM5%2FMDAxNjYzNDkyNDA5NjE5.v8NI4c2UD4ua91XneO1lbUU4Ta3YOnMci6EgmD61zQMg.vrWrnu_HsCAicmZRUM4qIRGwe1sPI9ZZhoOSDQ1uD7Qg.JPEG.yrebecca%2F1663492188167.jpg&type=sc960_832" alt="이미지"
+ onmouseover="over(this)"
+ onmouseout="out(this)">
+
+</body></html>
