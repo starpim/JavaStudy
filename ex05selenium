@@ -1,0 +1,26 @@
+from selenium import webdriver
+import time
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+
+url='https://www.naver.com/'
+browser=webdriver.Chrome()
+browser.get(url)
+time.sleep(1)
+
+login=browser.find_element(By.CLASS_NAME, 'MyView-module__link_login___HpHMW')
+login.click()
+time.sleep(1)
+id=browser.find_element(By.ID, 'id')
+id.send_keys('best103v')
+time.sleep(1)
+
+
+pw=browser.find_element(By.ID,'pw')
+pw.send_keys('12345')
+time.sleep(1)
+
+
+login=browser.find_element(By.ID,'log.login')
+login.click()
+time.sleep(10)
