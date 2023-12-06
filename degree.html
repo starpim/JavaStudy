@@ -1,0 +1,44 @@
+{%extends 'base.html'%}
+{%block main_area%}
+ <div class="my-5">
+ <div class="text-center mb-5">
+ <div class="row justify-content-center">
+    <div class="col-md-6">
+        <form class="card p-5" name="frm">
+            <div  >
+            <div class="input-group">
+                <span class="input-group-text">Degree</span>
+                <select class="form-select" name="degree">
+                    <option value="2">2차원</option>
+                    <option value="3">3차원</option>
+                    <option value="4">4차원</option>
+                    <option value="5">5차원</option>
+                    <option value="6">6차원</option>
+
+
+                </select>
+                <button id="img" class="btn btn-danger">그래프출력</button>
+            </div>
+        </div>
+        </form>
+        <div><img src="http://via.placeholder.com/200x200" width="100%"></div>
+    </div>
+ </div>
+ </div>
+
+ <script>
+     
+    $(frm).on("submit", function(e){
+         e.preventDefault();
+         $("#chart").attr('src', `/score/chart/${subject}`);
+          
+ 
+    })
+
+    
+</script>
+
+
+
+ </div>
+{%endblock%}
